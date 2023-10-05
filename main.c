@@ -4,19 +4,16 @@
 int main(int argc, char *argv[])
 {
     int x;
-    printf("정수를 입력하세요 : "); 
+    printf("정수를 입력하세요 : \n");
     scanf("%i",&x);
     if (x<0)
     {
-            printf("%i는 음수입니다. \n",x);
+            x= -x;
+            printf("절대값은 %i 입니다.\n",x);
     }
-    else if (x>0)
-    {
-         printf("%i는 양수입니다. \n",x);
-    } 
     else
     {
-        printf("0입니다. \n"); 
+        printf("절대값은 %i 입니다.\n",x);
     }
   system("PAUSE");	
   return 0;
